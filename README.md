@@ -14,6 +14,7 @@ Overview
 使い方、オプション、EXAMPLEで実行例を記載。
 ##Install
 インストール方法、ターミナルコマンドを書く。
+'''$ sudo cp [コピーする対象ファイルまでのパス] [コピー先までのパス]'''
 ##Contribution
 どうやって参加するかを書く、cloneなどの手続きなど。
 ##Licence
