@@ -5,7 +5,7 @@ Created and designed by Yamashita Keisuke(2016/12/3)
 
 Overview
 ##Description
-**No man is an island**
+**No man is an island 人は一人では何も成し遂げられない。**
 
 NoteHubはどこにいても、講義に参加することができて、たった一つのノートを作り上げるソーシャルクラスネットワークである。
 ##VS.
