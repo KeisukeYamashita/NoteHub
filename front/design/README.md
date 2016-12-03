@@ -1,4 +1,4 @@
-各種.aiファイルなど
+designディレクトリ
 =====
 
 Created and designed by Yamashita Keisuke(2016/12/3)
