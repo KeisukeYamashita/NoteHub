@@ -48,9 +48,9 @@ h5#buzzword,h5{
 .container-login .nav-tabs.nav-justified > li > a,
 .container-login .nav-tabs.nav-justified > li > a:hover,
 .container-login .nav-tabs.nav-justified > li > a:focus {
-    background: #ffffff;
+    background: #00acff;
     border: medium none;
-    color: #333333;
+    color: #ffffff;
     margin-bottom: 0;
     margin-right: 0;
     border-radius: 0;
@@ -58,12 +58,12 @@ h5#buzzword,h5{
 .container-login .nav-tabs.nav-justified > .active > a,
 .container-login .nav-tabs.nav-justified > .active > a:hover,
 .container-login .nav-tabs.nav-justified > .active > a:focus {
-    background: #00acff;
-    color: #ffffff;
+  background:#ffffff;
+  color: #333333;
 }
 .container-login .nav-tabs.nav-justified > li > a:hover,
 .container-login .nav-tabs.nav-justified > li > a:focus {
-    /*background: #f1b71d;*/
+    color:#333333;
 }
 .tabs-login {
     background: #ffffff;
