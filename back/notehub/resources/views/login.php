@@ -8,7 +8,7 @@
     <title>NoteHub ログインフォーム</title>
     <!-- Bootstrapのファイルをインポート -->
     <link href="/var/www/html/back/notehub/public/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/login.css">
+    <link href="http://160.16.240.249/../../public/css/login.css" rel="stylesheet">
   </head>
   <body>
     <div class="login-body">
@@ -22,7 +22,7 @@
 				<div id="login-access" class="tab-pane fade active in">
 					<h2><i class="glyphicon glyphicon-log-in"></i> NoteHubをはじめよう</h2>
           <CENTER>
-          <img src="todai.png" width="50%" height="50%";></CENTER>
+          <img src="/var/www/html/back/notehub/todai.png" width="50%" height="50%";></CENTER>
           <div id="buzzword"><h5>人は一人では何も成し遂げられない by John Donne</h5>
           <h5>みんなで講義を受けて、みんなで一つのノートを作るシステム</h5></div>
 					<form method="post" accept-charset="utf-8" autocomplete="off" role="form" class="form-horizontal">
