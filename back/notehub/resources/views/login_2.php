@@ -15,7 +15,7 @@
     <article class="container-login center-block">
 		<section>
 			<ul id="top-bar" class="nav nav-tabs nav-justified">
-				<li class="active"><a href="login.html">在学生の方へ</a></li>
+				<li class="active"><a href="/login">在学生の方へ</a></li>
         <li><a href="#">一般人・外部の方へ</a></li>
 			</ul>
 			<div class="tab-content tabs-login col-lg-12 col-md-12 col-sm-12 cols-xs-12">

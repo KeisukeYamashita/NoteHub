@@ -14,4 +14,8 @@ class NoteHubController extends Controller
     public function login() {
       return view('login');
     }
+
+    public function login_2() {
+      return view('login_2');
+    }
 }

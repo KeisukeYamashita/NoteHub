@@ -16,7 +16,7 @@
 		<section>
 			<ul id="top-bar" class="nav nav-tabs nav-justified">
 				<li class="active"><a href="#login-access">在学生の方へ</a></li>
-        <li><a href="login_2.html">一般人・外部の方へ</a></li>
+        <li><a href="/login_2">一般人・外部の方へ</a></li>
 			</ul>
 			<div class="tab-content tabs-login col-lg-12 col-md-12 col-sm-12 cols-xs-12">
 				<div id="login-access" class="tab-pane fade active in">

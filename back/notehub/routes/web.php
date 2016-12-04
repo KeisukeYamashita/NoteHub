@@ -16,3 +16,4 @@
 // });
 Route::get('/', 'NoteHubController@index');
 Route::get('/login', 'NoteHubController@login');
+Route::get('/login_2', 'NoteHubController@login_2');
