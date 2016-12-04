@@ -15,3 +15,4 @@
 //     return view('welcome');
 // });
 Route::get('/', 'NoteHubController@index');
+Route::get('/login', 'NoteHubController@login');
