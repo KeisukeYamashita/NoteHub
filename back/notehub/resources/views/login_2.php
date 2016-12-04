@@ -7,16 +7,16 @@
     <!-- これ以上のmeta属性タグは固定。これ以外に追加したかったら、これより下に作る。 -->
     <title>NoteHub ログインフォーム</title>
     <!-- Bootstrapのファイルをインポート -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="login_2.css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/login_2.css">
   </head>
   <body>
     <div class="login-body">
     <article class="container-login center-block">
 		<section>
 			<ul id="top-bar" class="nav nav-tabs nav-justified">
-				<li class="active"><a href="/login">在学生の方へ</a></li>
-        <li><a href="#">一般人・外部の方へ</a></li>
+				<li ><a href="/login">在学生の方へ</a></li>
+        <li class="active"><a href="#">一般人・外部の方へ</a></li>
 			</ul>
 			<div class="tab-content tabs-login col-lg-12 col-md-12 col-sm-12 cols-xs-12">
 				<div id="login-access" class="tab-pane fade active in">
@@ -25,28 +25,28 @@
           <h5>みんなで講義を受けて、みんなで一つのノートを作るシステム</h5>
 					<form method="post" accept-charset="utf-8" autocomplete="off" role="form" class="form-horizontal">
             <div class="form-group ">
-              <label for="password" class="sr-only">Password</label>
-                <input type="password" class="form-control" name="password" id="password"
+              <label for="login" class="sr-only">Password</label>
+                <input type="text" class="form-control" name="password" id="password"
                   placeholder="名前：東大太郎" value="" tabindex="2" />
             </div>
             <div class="form-group ">
-              <label for="password" class="sr-only">Password</label>
-                <input type="password" class="form-control" name="password" id="password"
+              <label for="login" class="sr-only">Password</label>
+                <input type="text" class="form-control" name="password" id="password"
                   placeholder="年齢：１８歳" value="" tabindex="2" />
             </div>
             <div class="form-group ">
-              <label for="password" class="sr-only">Password</label>
-                <input type="password" class="form-control" name="password" id="password"
+              <label for="login" class="sr-only">Password</label>
+                <input type="text" class="form-control" name="password" id="password"
                   placeholder="現所属：東京都立東京高校" value="" tabindex="2" />
             </div>
             <div class="form-group ">
-              <label for="password" class="sr-only">Password</label>
-                <input type="password" class="form-control" name="password" id="password"
+              <label for="login" class="sr-only">Password</label>
+                <input type="text" class="form-control" name="password" id="password"
                   placeholder="郵便番号：113-8654" value="" tabindex="2" />
             </div>
             <div class="form-group ">
-              <label for="password" class="sr-only">Password</label>
-                <input type="password" class="form-control" name="password" id="password"
+              <label for="login" class="sr-only">Password</label>
+                <input type="text" class="form-control" name="password" id="password"
                   placeholder="住所：東京都文京区本郷７丁目３−１" value="" tabindex="2" />
             </div>
 						<div class="form-group ">

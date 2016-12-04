@@ -7,8 +7,8 @@
     <!-- これ以上のmeta属性タグは固定。これ以外に追加したかったら、これより下に作る。 -->
     <title>NoteHub ログインフォーム</title>
     <!-- Bootstrapのファイルをインポート -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="login.css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/login.css">
   </head>
   <body>
     <div class="login-body">
@@ -43,7 +43,7 @@
 						</div>
 						<br/>
 						<div class="form-group ">
-								<button type="submit" name="log-me-in" id="submit" tabindex="5" class="btn btn-lg btn-primary" onclick="">ログインする</button>
+								<button type="submit" name="log-me-in" id="submit" tabindex="5" class="btn btn-lg btn-primary" onclick=""><a href="/channel">ログインする</a></button>
 						</div>
 					</form>
 				</div>
