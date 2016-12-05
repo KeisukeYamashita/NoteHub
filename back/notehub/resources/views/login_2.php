@@ -9,6 +9,7 @@
     <!-- Bootstrapのファイルをインポート -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/login_2.css">
+    <!-- <link rel="stylesheet" href="/css/login.css"> -->
   </head>
   <body>
     <div class="login-body">

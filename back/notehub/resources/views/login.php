@@ -7,8 +7,8 @@
     <!-- これ以上のmeta属性タグは固定。これ以外に追加したかったら、これより下に作る。 -->
     <title>NoteHub ログインフォーム</title>
     <!-- Bootstrapのファイルをインポート -->
-    <link href="http://160.16.240.249/back/notehub/public/css/login.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://160.16.240.249/back/notehub/public/css/bootstrap.min.css">
+    <link href="/css/login.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
   </head>
   <body>
     <div class="login-body">
