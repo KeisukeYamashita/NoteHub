@@ -1,20 +1,12 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- これ以上のmeta属性タグは固定。これ以外に追加したかったら、これより下に作る。 -->
-    <title>NoteHub ログインフォーム</title>
-    <!-- Bootstrapのファイルをインポート -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/login_2.css">
-    <!-- <link rel="stylesheet" href="/css/login.css"> -->
-  </head>
-  <body>
-    <div class="login-body">
+@extends('layouts.app')
+
+@section('content')
+
+  <div class="login-body">
     <article class="container-login center-block">
-		<section>
+      <div class="col-md-8 col-md-offset-2">
+        <div class="panel panel-default">
+          <div class="panel-body">
 			<ul id="top-bar" class="nav nav-tabs nav-justified">
 				<li ><a href="/login">在学生の方へ</a></li>
         <li class="active"><a href="#">一般人・外部の方へ</a></li>
@@ -82,12 +74,9 @@
 					</form>
 				</div>
 			</div>
-		</section>
+    </div>
+    </div>
+    </div>
 	</article>
 </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-</html>
+@endsection
