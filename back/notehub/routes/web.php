@@ -21,4 +21,4 @@ Route::get('/login_2', 'NoteHubController@login_2');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/home', 'NoteHubController@channel');
