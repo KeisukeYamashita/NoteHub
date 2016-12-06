@@ -21,4 +21,16 @@ Route::get('/login_2', 'NoteHubController@login_2');
 
 Auth::routes();
 
+// Route::post('/register', function()
+// {
+//     $rules['email'] = ['email', 'regex:/(.*)g\.ecc\.u-tokyo\.ac\.jp$/i'];
+//
+//     $validator = Validator::make(Input::all(), $rules);
+//
+//     if ($validator->fails())
+//     {
+//         return redirect('/register')->withErrors($validator);
+//     }
+// });
+
 Route::get('/home', 'NoteHubController@channel');
