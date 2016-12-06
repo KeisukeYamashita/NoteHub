@@ -8,7 +8,7 @@
     <title>NoteHub ログインフォーム</title>
     <!-- Bootstrapのファイルをインポート -->
     <link href="/css/login.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
   </head>
   <body>
     <div class="login-body">

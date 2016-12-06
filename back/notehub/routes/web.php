@@ -14,7 +14,7 @@
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', 'NoteHubController@login');
+Route::get('/', 'NoteHubController@index');
 Route::get('/login', 'NoteHubController@login');
 Route::get('/login_2', 'NoteHubController@login_2');
 Route::get('/channel', 'NoteHubController@channel');
