@@ -22,7 +22,7 @@
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <img class="team-logo" src="0fromtokyo.png">
+        <img class="team-logo" src="/0fromtokyo.png">
         <button type="button" class="navbar-toggle collapsed"data-toggle="collapse"data-target="#navbarEexample8">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
@@ -47,8 +47,6 @@
     <div class="main">
     <img class="room-img" src="classroom.png">
     <!-- <div class="notehub"> -->
-      <p class="notehub">NoteHubはどこにいても,講義に参加することができ<br>一つのノートを作り上げるソーシャルクラスネットワーク
-      </p>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
