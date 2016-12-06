@@ -25,25 +25,55 @@
           <img src="todai.png" width="50%" height="50%";></CENTER>
           <div id="buzzword"><h5>人は一人では何も成し遂げられない by John Donne</h5>
           <h5>みんなで講義を受けて、みんなで一つのノートを作るシステム</h5></div>
-					<form method="post" accept-charset="utf-8" autocomplete="off" role="form" class="form-horizontal">
-						<div class="form-group ">
-							<label for="login" class="sr-only">Email</label>
-								<input type="text" class="form-control" name="login" id="login_value"
-									placeholder="email@g.ecc.u-tokyo.ac.jp" tabindex="1" value="" />
+					<form method="post" accept-charset="utf-8" autocomplete="off" role="form" class="form-horizontal" action"{{ url('/login') }}">
+            {{ csrf_field() }}
+
+						<div class="form-group{{ $errors->has('email') ? 'has-error' : '' }}">
+							<label for="email" class="col-md-4 control-label">Email</label>
+
+              <div class="col-md-6">
+								<input id="email" type="text" class="form-control" name="email"
+									placeholder="email@g.ecc.u-tokyo.ac.jp" tabindex="1" value="{{ old('email') }}" required autofocus>
+
+                  @if ($errors->has('email'))
+                    <span class="help-block">
+                      <strong>{{ $error->first('email') }}</strong>
+                    </span>
+                  @endif
+              </div>
 						</div>
-						<div class="form-group ">
-							<label for="password" class="sr-only">Password</label>
+						<div class="form-group{{ $errors->has('password') ? 'has-error' : ''}}">
+							<label for="password" class="col-md-4 control-label">Password</label>
+
+              <div class="col-md-6">
 								<input type="password" class="form-control" name="password" id="password"
 									placeholder="パスワード" value="" tabindex="2" />
+
+                  @if ($errors->has('password'))
+                      <span class="help-block">
+                          <strong>{{ $errors->first('password') }}</strong>
+                      </span>
+                  @endif
+              </div>
 						</div>
-						<div class="checkbox">
-								<label class="control-label" for="remember_me">
-									<input type="checkbox" name="remember_me" id="remember_me" value="1" class="" tabindex="3" />パスワードをブラウザに記録します
-								</label>
-						</div>
+
+            <div class="form-group">
+              <div class="col-md-6 col-md-offset-4">
+						      <div class="checkbox">
+								    <label>
+									    <input type="checkbox" name="remember" tabindex="3" />パスワードを記憶する
+								    </label>
+						      </div>
+              </div>
+            </div>
+
 						<br/>
 						<div class="form-group ">
-								<button type="submit" name="log-me-in" id="submit" tabindex="5" class="btn btn-lg btn-primary" onclick=""><a href="/channel">ログインする</a></button>
+								<button type="submit" name="log-me-in" id="submit" tabindex="5" class="btn btn-primary" onclick="">ログインする</button>
+
+                <a href="{{ url('/password/reset') }}" class="btn btn-link">
+                  パスワードを忘れた場合
+                </a>
 						</div>
 					</form>
 				</div>
