@@ -6,7 +6,6 @@
     <atricle class="container-login center-block">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <!-- <div class="panel-heading">Login</div> -->
                 <div class="panel-body">
                   <ul id="top-bar" class="nav nav-tabs nav-justified">
             				<li class="active"><a href="#login-access">在学生の方へ</a></li>
@@ -19,7 +18,7 @@
                       <img src="todai.png" width="50%" height="50%";></CENTER>
                       <div id="buzzword"><h5>人は一人では何も成し遂げられない by John Donne</h5>
                       <h5>みんなで講義を受けて、みんなで一つのノートを作るシステム</h5></div>
-                  <form method="post" accept-charset="utf-8" autocomplete="off" role="form" class="form-horizontal" action"{{ url('/login') }}">
+                  <form method="POST" accept-charset="utf-8" autocomplete="off" role="form" class="form-horizontal" action"{{ url('/login') }}">
                     {{ csrf_field() }}
 
                     <div class="form-group{{ $errors->has('email') ? 'has-error' : '' }}">
@@ -72,7 +71,6 @@
                         </div>
                     </form>
                 </div>
-            <!-- </div> -->
         </div>
     </div>
   </article>

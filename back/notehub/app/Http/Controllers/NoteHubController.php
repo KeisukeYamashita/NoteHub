@@ -11,12 +11,12 @@ class NoteHubController extends Controller
       return view('index');
     }
 
-    public function login() {
-      return view('login');
-    }
+    // public function login() {
+    //   return view('login');
+    // }
 
     public function login_2() {
-      return view('login_2');
+      return view('auth.login_2');
     }
 
     public function channel() {
