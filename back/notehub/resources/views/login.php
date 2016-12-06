@@ -22,7 +22,7 @@
 				<div id="login-access" class="tab-pane fade active in">
 					<h2><i class="glyphicon glyphicon-log-in"></i> NoteHubをはじめよう</h2>
           <CENTER>
-          <img src="todai.png" width="50%" height="50%";></CENTER>
+          <img src="/todai.png" width="50%" height="50%";></CENTER>
           <div id="buzzword"><h5>人は一人では何も成し遂げられない by John Donne</h5>
           <h5>みんなで講義を受けて、みんなで一つのノートを作るシステム</h5></div>
 					<form method="post" accept-charset="utf-8" autocomplete="off" role="form" class="form-horizontal" action"{{ url('/login') }}">

@@ -1,0 +1,12 @@
+div.table-responsive{
+  margin-left:5%;
+  margin-right:5%
+}
+
+span.glyphicon-ok{
+  color:green;
+}
+
+span.glyphicon-remove{
+  color:red;
+}
