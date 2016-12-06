@@ -1,0 +1,59 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
+
+body {
+  font-family: Open Sans;
+  font-size: 16px;
+  line-height: 1.42857;
+  background: #333333;
+  height: 350px;
+  padding: 0;
+  margin: 0;
+}
+.team-logo{
+  margin-top: 5px;
+  float:left;
+  max-height: 55px;
+  width: auto;
+}
+.notehub-logo{
+  margin-left: 50%;
+  max-height: 50px;
+  width: auto;
+}
+.navbar-nav{
+  float: right;
+  text-decoration: none;
+  margin-bottom:5px;
+}
+.navbar-button{
+  margin-top: 5px;
+  text-decoration: none;
+}
+.navbar-button:hover{
+  border-bottom: solid 5px #00acff;
+  padding-bottom: -5px;
+}
+.navbar-login{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #00acff;
+  text-align: center;
+   border-radius: 8px;
+   -moz-border-radius: 8px;
+   -webkit-border-radius: 8px;
+}
+.navbar-login:hover {
+	background-image: -webkit-linear-gradient(top, #009ae5, #009ae5);
+}
+.main{
+  margin-top: 65px;
+}
+.room-img{
+  max-width: 100%;
+  height: auto;
+}
+/*.notehub{
+  margin-top: 10px;
+  background-color: #00acff;
+  color: #fff;
+}*/
