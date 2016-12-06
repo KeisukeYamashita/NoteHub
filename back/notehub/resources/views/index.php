@@ -30,7 +30,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#">
-          <img class="notehub-logo" src="notehub.png">
+          <img class="notehub-logo" src="/notehub.png">
         </a>
       </div>
 
@@ -45,7 +45,7 @@
     </nav>
 
     <div class="main">
-    <img class="room-img" src="classroom.png">
+    <img class="room-img" src="/classroom.png">
     <!-- <div class="notehub"> -->
     </div>
 
