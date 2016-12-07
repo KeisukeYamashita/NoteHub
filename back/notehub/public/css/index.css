@@ -9,24 +9,36 @@ body {
   padding: 0;
   margin: 0;
 }
-.team-logo{
+
+/* navbar全体 */
+/*.team-logo{
   margin-top: 5px;
   float:left;
   max-height: 55px;
   width: auto;
+}*/
+.navbar-brand{
+  text-align: center;
 }
 .notehub-logo{
-  margin-left: 50%;
-  max-height: 50px;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 35%;
+  right: 0;
+  max-height: 200px;
   width: auto;
 }
 .navbar-nav{
-  float: right;
+  /*float: right;*/
+  margin: 0px, 100px;
   text-decoration: none;
   margin-bottom:5px;
 }
 .navbar-button{
+  float: left;
   margin-top: 5px;
+  margin-right: 20px;
   text-decoration: none;
 }
 .navbar-button:hover{
@@ -36,6 +48,7 @@ body {
 .navbar-login{
   margin-top: 5px;
   margin-bottom: 5px;
+  margin-right: 10px;
   background-color: #00acff;
   text-align: center;
    border-radius: 8px;
@@ -45,6 +58,8 @@ body {
 .navbar-login:hover {
 	background-image: -webkit-linear-gradient(top, #009ae5, #009ae5);
 }
+
+/*indexの中身 */
 .main{
   margin-top: 65px;
 }

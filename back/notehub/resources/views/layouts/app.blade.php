@@ -13,7 +13,7 @@
     <!-- Styles -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/login.css">
-
+    <link rel="stylesheet" href="/css/index.css">
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
@@ -21,6 +21,7 @@
         ]); ?>
     </script>
 </head>
+
 <body>
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
@@ -37,7 +38,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        NoteHub
+                        <img src="notehub.png"  class="notehub-logo">
                     </a>
                 </div>
 
@@ -45,14 +46,17 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                         &nbsp;
+                        <li class="navbar-button"><a class="home" href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> ホーム</a></li>
+                        <li class="navbar-button"><a href="#"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> サービス</a></li>
+
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ url('/login') }}">ログインする</a></li>
-                            <li><a href="{{ url('/register') }}">利用登録する</a></li>
+                            <li><a class="navbar-login" href="{{ url('/login') }}" style="color:#ffffff"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> ログイン</a></li>
+                            <li><a class="navbar-login" href="{{ url('/register') }}" style="color:#ffffff"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> 利用登録</a></li>
                         @else
                             <li class="dropdown">
                                 <a href="{{ url('/logout')  }}" onclick="event.preventDefault();
