@@ -1,7 +1,11 @@
-@extends('layouts.app')
+<!-- @extends('layouts.app') -->
 
-@section('content')
-
+<!-- @section('content') -->
+<!DOCTYPE html>
+<head>
+  <title>チャンネル</title>
+</head>
+<body>
 <div class="table-responsive">
   <table class="table  table-hover">
     <thead>
@@ -56,4 +60,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-@endsection
+<!-- @endsection -->
+</body>
+</html>
