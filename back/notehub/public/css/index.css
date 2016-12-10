@@ -11,12 +11,12 @@ body {
 }
 
 /* navbar全体 */
-/*.team-logo{
+.team-logo{
   margin-top: 5px;
   float:left;
   max-height: 55px;
   width: auto;
-}*/
+}
 .navbar-brand{
   text-align: center;
 }
@@ -29,8 +29,10 @@ body {
   max-height: 200px;
   width: auto;
 }
+
+/*これは「ホーム」「サービス」「ログイン」を格納しているもの*/
 .navbar-nav{
-  /*float: right;*/
+  float: right;
   margin: 0px, 100px;
   text-decoration: none;
   margin-bottom:5px;
@@ -45,6 +47,8 @@ body {
   border-bottom: solid 5px #00acff;
   padding-bottom: -5px;
 }
+
+/*ここは「ログイン」のボタンについて*/
 .navbar-login{
   margin-top: 5px;
   margin-bottom: 5px;
