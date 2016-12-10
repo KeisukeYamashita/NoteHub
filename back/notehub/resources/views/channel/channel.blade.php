@@ -20,7 +20,7 @@
     <tbody>
     <tr>
         <td>41024</td>
-        <td>有機合成化学</td>
+        <td><a href="/yuukikagaku">有機合成化学</a></td>
         <td>近藤検事</td>
         <td>1108教室</td>
         <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>

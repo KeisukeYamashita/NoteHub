@@ -22,4 +22,8 @@ class NoteHubController extends Controller
     public function channel() {
       return view('channel.channel');
     }
+
+    public function yuukikagaku() {
+      return view('classes.classes_test');
+    }
 }
