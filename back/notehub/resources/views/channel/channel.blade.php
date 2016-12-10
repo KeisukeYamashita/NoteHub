@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="table-responsive">
+<div class="table-responsive" style="background-color:#ffffff;">
   <table class="table  table-hover">
     <thead>
       <tr>

@@ -1,6 +1,7 @@
 div.table-responsive{
   margin-left:5%;
-  margin-right:5%
+  margin-right:5%;
+  background-color: #ffffff;
 }
 
 span.glyphicon-ok{
