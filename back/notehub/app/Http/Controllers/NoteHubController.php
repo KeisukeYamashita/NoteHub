@@ -1,9 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
+// require 'vendor/autoload.php';
+
 
 use Illuminate\Http\Request;
 use App\Classes;
+use Carbon\Carbon;
 
 class NoteHubController extends Controller
 {
@@ -21,7 +24,11 @@ class NoteHubController extends Controller
     }
 
     public function channel() {
-      $classes = Classes::all();
+      $dt = Carbon::now();
+      // 現在時刻を取得して、その時刻が何限かを判断、曜日ごとに抽出する。
+      // echo $dt . "\n";
+      // echo $dt->dayOfWeek . "\n";
+      $classes = Classes::where('dayOfWeek', '=', $dt->dayOfWeek)->get();
       return view('channel.channel')->with('classes', $classes);
     }
 
