@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>有機化学</title>
+  <title>{{ $class->className }}</title>
 </head>
 <body>
 
@@ -17,7 +17,7 @@
 <body>
   <main>
     <h1>共同でノートを作っていきましょう。</h1>
-    <p>有機合成化学のノート作りをテスト中。<a onclick="window.open(window.location.href);return false;" target="_blank">新しいタブ</a> を作って確認して。</p>
+    <p>{{ $class->className }}のノート作りをテスト中。<a onclick="window.open(window.location.href);return false;" target="_blank">新しいタブ</a> を作って確認して。</p>
     <textarea id="text_area_1"></textarea>
     <textarea id="text_area_2"></textarea>
     <button id="auth_button">Authorize</button>
