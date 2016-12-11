@@ -17,7 +17,7 @@
       @forelse ($classes as $class)
     <tr>
         <td>{{ $class->classid }}</td>
-        <td><a href="/{$class->classid}">{{ $class->className }}</a></td>
+        <td><a href="/{{$class->classid}}">{{ $class->className }}</a></td>
         <td>{{ $class->teacherName }}</td>
         <td>{{ $class->roomNumber }}教室</td>
         <!-- <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td> -->
