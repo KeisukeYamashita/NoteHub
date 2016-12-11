@@ -25,13 +25,13 @@ class NoteHubController extends Controller
 
     public function channel() {
       $dt = Carbon::now();
-      $nowtime = $dt->hour * 60 + $dt->minute;
+      $tz = 'Asia/Tokyo';
       $period = 0;
-      if (8 * 60 + 30 < $nowtime and $nowtime < 10 * 60 + 15) $period = 1;
-      if (10 * 60 + 25 < $nowtime and $nowtime < 12 * 60 + 10) $period = 2;
-      if (13 * 60 < $nowtime and $nowtime < 14 * 60 + 45) $period = 3;
-      if (14 * 60 + 55 < $nowtime and $nowtime < 16 * 60 + 40) $period = 4;
-      if (16 * 60 + 50 < $nowtime and $nowtime < 18 * 60 + 35) $period = 5;
+      if ($dt->between(Carbon::createFromTime(8,30,0,$tz), Carbon::createFromTime(10,15,0,$tz))) $period = 1;
+      if ($dt->between(Carbon::createFromTime(10,25,0,$tz), Carbon::createFromTime(12,10,0,$tz))) $period = 2;
+      if ($dt->between(Carbon::createFromTime(13,0,0,$tz), Carbon::createFromTime(14,45,0,$tz))) $period = 3;
+      if ($dt->between(Carbon::createFromTime(14,55,0,$tz), Carbon::createFromTime(16,40,0,$tz))) $period = 4;
+      if ($dt->between(Carbon::createFromTime(16,50,0,$tz), Carbon::createFromTime(18,35,0,$tz))) $period = 5;
       $classes = Classes::where('dayOfWeek', '=', $dt->dayOfWeek)->where('period', '=', $period)->get();
       return view('channel.channel')->with('classes', $classes);
     }
