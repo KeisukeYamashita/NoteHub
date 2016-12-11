@@ -75,8 +75,15 @@
       </div>
     </nav> -->
 
+    <div class="jumbotron">
+      <h1>Note Hub</h1>
+    	<!-- <p><img class="room-img" src="classroom.png"></p> -->
+      <p class="jumbotron_text">どこにいても講義に参加でき<br>みんなでノートを作り上げる<br>ソーシャルクラスネットワーク</p>
+    	<p><a class="btn btn-primary btn-lg " href="#" role="button">もっと詳しく</a></p>
+    </div>
+
     <div class="main">
-    <img class="room-img" src="classroom.png">
+
     <!-- <div class="notehub"> -->
     </div>
 
