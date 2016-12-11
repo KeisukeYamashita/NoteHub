@@ -1,10 +1,9 @@
 @charset "utf-8";
 body{
-	
 }
 #container{
 	margin: 0 auto;
-	width: 600px;
+	width: 800px;
 }
 #inputField{
 	width: 100%;
@@ -21,7 +20,7 @@ body{
 	word-break: break-all;
 }
 #message{
-	width: 40%;
+	width: 100%;
 }
 .user{
 	clear: both;
@@ -42,6 +41,8 @@ body{
     max-width: 500px;
     float: left;
 }
+
+/*.left_balloonの最初と最後の要素にはこれが追加される*/
 .left_balloon:after,
 .left_balloon:before {
     left: 7.5px;
@@ -65,7 +66,7 @@ body{
     border-width: 8px;
     margin-top: -8px;
 }*/
- 
+
 /*******************************
 * 右からの吹き出し
 ********************************/
@@ -81,6 +82,8 @@ body{
     max-width: 500px;
     float: right;
 }
+
+/*.left_ballonクラスと同様に最初と最後に追加される*/
 .right_balloon:after,
 .right_balloon:before {
     left: 100%;
@@ -104,7 +107,7 @@ body{
     border-width: 8px;
     margin-top: -8px;
 }
- 
+
 /*******************************
 * 割り込みを解除
 ********************************/
