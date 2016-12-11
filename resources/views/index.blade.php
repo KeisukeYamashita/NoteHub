@@ -76,18 +76,15 @@
     </nav> -->
 
     <div class="jumbotron">
-      <h1 class="jumbotron_text">どこにいても講義に参加でき<br>みんなでノートを作り上げる<br>ソーシャルクラスネットワーク</h1>
-    	<p><a class="btn btn-primary btn-lg " href="#service" role="button">もっと詳しく</a></p>
+      <h1>Note Hub</h1>
+    	<!-- <p><img class="room-img" src="classroom.png"></p> -->
+      <p class="jumbotron_text">どこにいても講義に参加でき<br>みんなでノートを作り上げる<br>ソーシャルクラスネットワーク</p>
+    	<p><a class="btn btn-primary btn-lg " href="#" role="button">もっと詳しく</a></p>
     </div>
 
-    <div id="service">
+    <div class="main">
 
-      <blockquote class="quote">
-        人は一人では何も成し遂げられない by John Donne
-      </blockquote>
-      <p>
-        NoteHubはこの考えに基づき、その場にいなくてもみんなで講義を受けて、みんなで一つのノートを作るシステム
-      </p>
+    <!-- <div class="notehub"> -->
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
