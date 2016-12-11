@@ -11,7 +11,12 @@ body {
 }
 
 /* navbar全体 */
-
+/*.team-logo{
+  margin-top: 5px;
+  float:left;
+  max-height: 55px;
+  width: auto;
+}*/
 .navbar-brand{
   text-align: center;
 }
@@ -55,38 +60,38 @@ body {
 }
 
 /*indexの中身 */
+.main{
+  margin-top: 65px;
+}
 .jumbotron{
   height: 580px;
   background-image: url("/background.jpg"); background-repeat:no-repeat;
   background-size: cover;
 }
 .jumbotron_text{
-  margin-left: 50px;
-  margin-top: 230px;
-  padding: 5px;
-  width:900px;
-  background-color: #fff;
+  /*background-color: #fff;*/
   color: #00acff;
-  opacity: 0.8;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
 }
-.jumbotron .btn{
+.jumbotron h1{
+  background-color: #333;
   margin-left: 50px;
+  /*float: left;*/
+  width:300px；
+
 }
-#service{
-  text-align: center;
-  margin-top: 100px;
-  height: 720px;
-  background-image: url("/service.JPG");
-  background-repeat:no-repeat;
-  background-size: contain;
-}
-.service_text{
+.jumbotron_text{
+  margin-left: 50px;
+  padding: 5px;
+  width:320px;
   background-color: #fff;
-  margin-top: 2000px;
+  opacity: 0.6;
 }
-.quote{
-  text-decoration: underline;
+.room-img{
+  max-width: 100%;
+  height: auto;
 }
+/*.notehub{
+  margin-top: 10px;
+  background-color: #00acff;
+  color: #fff;
+}*/

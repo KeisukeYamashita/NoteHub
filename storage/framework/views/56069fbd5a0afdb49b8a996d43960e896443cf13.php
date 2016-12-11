@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
 
     <title>NoteHub</title>
 
@@ -37,55 +37,56 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <a class="navbar-brand" href="<?php echo e(url('/')); ?>">
                         <img src="hub.png"  class="notehub-logo">
                     </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
-
+                  
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                     <ul class="nav navbar-nav">
                         &nbsp;
                         <li class="navbar-button"><a class="home" href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> ホーム</a></li>
-                        <li class="navbar-button"><a href="#service"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> サービス</a></li>
+                        <li class="navbar-button"><a href="#"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> サービス</a></li>
 
                     </ul>
                         <!-- Authentication Links -->
-                        @if (Auth::guest())
-                            <li><a class="navbar-login" href="{{ url('/login') }}" style="color:#ffffff"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> ログイン</a></li>
-                            <li><a class="navbar-login" href="{{ url('/register') }}" style="color:#ffffff"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 新規登録</a></li>
-                        @else
+                        <?php if(Auth::guest()): ?>
+                            <li><a class="navbar-login" href="<?php echo e(url('/login')); ?>" style="color:#ffffff"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> ログイン</a></li>
+                            <li><a class="navbar-login" href="<?php echo e(url('/register')); ?>" style="color:#ffffff"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 新規登録</a></li>
+                        <?php else: ?>
                             <li class="dropdown">
-                                <a href="{{ url('/logout')  }}" onclick="event.preventDefault();
+                                <a href="<?php echo e(url('/logout')); ?>" onclick="event.preventDefault();
                                          document.getElementById('logout-form').submit();">
                                     ログアウト
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
-                                        <a href="{{ url('/logout') }}"
+                                        <a href="<?php echo e(url('/logout')); ?>"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                             Logout
                                         </a>
 
-                                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
+                                        <form id="logout-form" action="<?php echo e(url('/logout')); ?>" method="POST" style="display: none;">
+                                            <?php echo e(csrf_field()); ?>
+
                                         </form>
                                     </li>
                                 </ul>
                             </li>
-                        @endif
+                        <?php endif; ?>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        @yield('content')
+        <?php echo $__env->yieldContent('content'); ?>
     </div>
 
     <!-- Scripts -->
