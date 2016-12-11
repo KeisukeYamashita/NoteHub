@@ -24,4 +24,9 @@ class NoteHubController extends Controller
       $classes = Classes::all();
       return view('channel.channel')->with('classes', $classes);
     }
+
+    public function classes($classid) {
+      $class = Classes::findOrFail($classid);
+      return view('chat')->with('class', $class);
+    }
 }
