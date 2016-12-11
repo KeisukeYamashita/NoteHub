@@ -128,7 +128,7 @@
       <!-- チャットで使うjquery(ajax)を組み込む -->
     	<script src="/js/jquery-2.1.4.min.js"></script>
       <!--  チャットを実装するためのjavascriptファイルを組み込む　-->
-    	<script src="/js/chat.js"></script>
+    	<script src="/js/chat{{$class->classid}}.js"></script>
 
   </body>
 </html>
