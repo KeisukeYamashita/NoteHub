@@ -56,7 +56,7 @@
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             <li><a class="navbar-login" href="{{ url('/login') }}" style="color:#ffffff"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> ログイン</a></li>
-                            <li><a class="navbar-login" href="{{ url('/register') }}" style="color:#ffffff"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> 利用登録</a></li>
+                            <li><a class="navbar-login" href="{{ url('/register') }}" style="color:#ffffff"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 新規登録</a></li>
                         @else
                             <li class="dropdown">
                                 <a href="{{ url('/logout')  }}" onclick="event.preventDefault();
