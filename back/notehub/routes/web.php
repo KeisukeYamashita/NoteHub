@@ -34,4 +34,4 @@ Auth::routes();
 // });
 
 Route::get('/home', 'NoteHubController@channel');
-Route::get('/yuukikagaku', 'NoteHubController@yuukikagaku');
+Route::get('/{classid}', 'NoteHubController@classes');
