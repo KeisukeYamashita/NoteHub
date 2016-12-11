@@ -279,7 +279,7 @@ class ComposerStaticInit1ceff3c1a542ea76b896c81097abfe53
 
     public static $classMap = array (
         'AddRememberTokenToUsersTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_06_132609_add_remember_token_to_users_table.php',
-        'CreateClassesTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_11_181922_create_classes_table.php',
+        'CreateClassesTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_11_172555_create_classes_table.php',
         'CreateUserTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_04_160939_create_user_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',

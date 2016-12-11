@@ -29,5 +29,4 @@ class NoteHubController extends Controller
       $class = Classes::findOrFail($classid);
       return view('classes.classes_test')->with('class', $class);
     }
-
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>有機化学</title>
+    <title>{{ $class->className }}</title>
     <!-- 共同作業のためのcssファイルをもらってくる  -->
     <link href="https://www.gstatic.com/realtime/quickstart-styles.css" rel="stylesheet" type="text/css"/>
     <!-- Bootsrap3を使うためのファイルをもらっけくる -->
@@ -19,7 +19,7 @@
     <!-- 共同作業のコード -->
     <main>
       <h1>共同でノートを作っていきましょう。</h1>
-      <p>有機合成化学のノート作りをテスト中。<a onclick="window.open(window.location.href);return false;" target="_blank">新しいタブ</a> を作って確認して。</p>
+      <p>{{ $class->className }}のノート作りをテスト中。<a onclick="window.open(window.location.href);return false;" target="_blank">新しいタブ</a> を作って確認して。</p>
       <!-- 入力エリアを作成
               text_areaの片方だけを消してもエラーがでることに注意 -->
       <textarea id="text_area_1"></textarea>
@@ -128,7 +128,7 @@
       <!-- チャットで使うjquery(ajax)を組み込む -->
     	<script src="/js/jquery-2.1.4.min.js"></script>
       <!--  チャットを実装するためのjavascriptファイルを組み込む　-->
-    	<script src="/js/chat.js"></script>
+    	<script src="/js/chats/chat{{$class->classid}}.js"></script>
 
   </body>
 </html>
