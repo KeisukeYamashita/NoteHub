@@ -25,10 +25,14 @@ class NoteHubController extends Controller
 
     public function channel() {
       $dt = Carbon::now();
-      // 現在時刻を取得して、その時刻が何限かを判断、曜日ごとに抽出する。
-      // echo $dt . "\n";
-      // echo $dt->dayOfWeek . "\n";
-      $classes = Classes::where('dayOfWeek', '=', $dt->dayOfWeek)->get();
+      $nowtime = $dt->hour * 60 + $dt->minute;
+      $period = 0;
+      if (8 * 60 + 30 < $nowtime and $nowtime < 10 * 60 + 15) $period = 1;
+      if (10 * 60 + 25 < $nowtime and $nowtime < 12 * 60 + 10) $period = 2;
+      if (13 * 60 < $nowtime and $nowtime < 14 * 60 + 45) $period = 3;
+      if (14 * 60 + 55 < $nowtime and $nowtime < 16 * 60 + 40) $period = 4;
+      if (16 * 60 + 50 < $nowtime and $nowtime < 18 * 60 + 35) $period = 5;
+      $classes = Classes::where('dayOfWeek', '=', $dt->dayOfWeek)->where('period', '=', $period)->get();
       return view('channel.channel')->with('classes', $classes);
     }
 
