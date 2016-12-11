@@ -1,6 +1,4 @@
-@extends('layouts.app')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -43,31 +41,32 @@
           <li class="navbar-button"><a class="home" href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> ホーム</a></li>
           <li class="navbar-button"><a href="#"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> サービス</a></li>
           <li ><a class="navbar-login" href="/login" style="color:#ffffff"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> ログイン</a></li>
-              @if (Auth::guest())
-                  <li><a href="{{ url('/login') }}">ログインする</a></li> -->
-                  <!-- <li><a href="{{ url('/register') }}">利用登録する</a></li> -->
-              <!-- @else
+              <?php if(Auth::guest()): ?>
+                  <li><a href="<?php echo e(url('/login')); ?>">ログインする</a></li> -->
+                  <!-- <li><a href="<?php echo e(url('/register')); ?>">利用登録する</a></li> -->
+              <!-- <?php else: ?>
                   <li class="dropdown">
-                      <a href="{{ url('/logout')  }}" onclick="event.preventDefault();
+                      <a href="<?php echo e(url('/logout')); ?>" onclick="event.preventDefault();
                                document.getElementById('logout-form').submit();">
                           ログアウト
                       </a>
 
                       <ul class="dropdown-menu" role="menu">
                           <li>
-                              <a href="{{ url('/logout') }}"
+                              <a href="<?php echo e(url('/logout')); ?>"
                                   onclick="event.preventDefault();
                                            document.getElementById('logout-form').submit();">
                                   Logout
                               </a>
 
-                              <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
-                                  {{ csrf_field() }}
+                              <form id="logout-form" action="<?php echo e(url('/logout')); ?>" method="POST" style="display: none;">
+                                  <?php echo e(csrf_field()); ?>
+
                               </form>
                           </li>
                       </ul>
                   </li>
-              @endif
+              <?php endif; ?>
           </ul>
           </ul>
 
@@ -76,7 +75,9 @@
     </nav> -->
 
     <div class="jumbotron">
-      <h1 class="jumbotron_text">どこにいても講義に参加でき<br>みんなでノートを作り上げる<br>ソーシャルクラスネットワーク</h1>
+      <h1>Note Hub</h1>
+    	<!-- <p><img class="room-img" src="classroom.png"></p> -->
+      <p class="jumbotron_text">どこにいても講義に参加でき<br>みんなでノートを作り上げる<br>ソーシャルクラスネットワーク</p>
     	<p><a class="btn btn-primary btn-lg " href="#" role="button">もっと詳しく</a></p>
     </div>
 
@@ -93,4 +94,6 @@
   </html>
 
 
-    @endsection
+    <?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
