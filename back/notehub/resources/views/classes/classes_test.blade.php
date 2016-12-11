@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>有機化学</title>
-  </head>
     <!-- 共同作業のためのcssファイルをもらってくる  -->
     <link href="https://www.gstatic.com/realtime/quickstart-styles.css" rel="stylesheet" type="text/css"/>
     <!-- Bootsrap3を使うためのファイルをもらっけくる -->
