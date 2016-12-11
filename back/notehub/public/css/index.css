@@ -55,9 +55,6 @@ body {
 }
 
 /*indexの中身 */
-.main{
-  margin-top: 65px;
-}
 .jumbotron{
   height: 580px;
   background-image: url("/background.jpg"); background-repeat:no-repeat;
@@ -78,12 +75,18 @@ body {
 .jumbotron .btn{
   margin-left: 50px;
 }
-/*.room-img{
-  max-width: 100%;
-  height: auto;
-}*/
-/*.notehub{
-  margin-top: 10px;
-  background-color: #00acff;
-  color: #fff;
-}*/
+#service{
+  text-align: center;
+  margin-top: 100px;
+  height: 720px;
+  background-image: url("/service.JPG");
+  background-repeat:no-repeat;
+  background-size: contain;
+}
+.service_text{
+  background-color: #fff;
+  margin-top: 2000px;
+}
+.quote{
+  text-decoration: underline;
+}

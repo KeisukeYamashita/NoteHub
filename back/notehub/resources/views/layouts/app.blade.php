@@ -51,7 +51,7 @@
                     <ul class="nav navbar-nav">
                         &nbsp;
                         <li class="navbar-button"><a class="home" href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> ホーム</a></li>
-                        <li class="navbar-button"><a href="#"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> サービス</a></li>
+                        <li class="navbar-button"><a href="#service"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> サービス</a></li>
 
                     </ul>
                         <!-- Authentication Links -->
