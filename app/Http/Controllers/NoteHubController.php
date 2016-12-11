@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Classes;
 
 class NoteHubController extends Controller
 {
@@ -20,6 +21,7 @@ class NoteHubController extends Controller
     }
 
     public function channel() {
-      return view('channel.channel');
+      $classes = Classes::all();
+      return view('channel.channel')->with('classes', $classes);
     }
 }
