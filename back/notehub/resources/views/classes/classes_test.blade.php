@@ -18,10 +18,6 @@
 
   <body>
     <!-- ライブストリーミングのコード -->
-    <div class="container livestreaming_field">
-      <h1>ライブストリーミングの枠取り（配置していない）<h1>
-    </div>
-
     <!-- 共同作業のコード -->
     <div class = "container social_note_taking">
     <main>
@@ -33,13 +29,10 @@
       		<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-font" aria-hidden="true"></span></button>
       		<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-bold" aria-hidden="true"></span></button>
       		<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-italic" aria-hidden="true"></span></button>
-      		<button type="button" class="btn btn-default">Ｄ</button>
-      		<button type="button" class="btn btn-default">Ｅ</button>
       	</div>
       	<div class="btn-group" role="group">
-      		<button type="button" class="btn btn-default">Ｆ</button>
-      		<button type="button" class="btn btn-default">Ｇ</button>
-      		<button type="button" class="btn btn-default">Ｈ</button>
+      		<button type="button" class="btn btn-default">中央寄せ</button>
+      		<button type="button" class="btn btn-default">右寄せ</button>
       	</div>
       </div>
       <textarea id="text_area" style="display:block; color:red"></textarea>
