@@ -17,13 +17,14 @@
   <body>
 
     <!-- 共同作業のコード -->
+    <div class="social_note_taking"
     <main>
       <h1>共同でノートを作っていきましょう。</h1>
       <p>{{ $class->className }}のノート作りをテスト中。<a onclick="window.open(window.location.href);return false;" target="_blank">新しいタブ</a> を作って確認して。</p>
       <!-- 入力エリアを作成
               text_areaの片方だけを消してもエラーがでることに注意 -->
       <textarea id="text_area_1"></textarea>
-      <textarea id="text_area_2"></textarea>
+      <!-- <textarea id="text_area_2"></textarea> -->
       <button id="auth_button">Authorize</button>
     </main>
     <script>
@@ -101,13 +102,14 @@
       // お互いのデータを交換する
       function wireTextBoxes(collaborativeString) {
         var textArea1 = document.getElementById('text_area_1');
-        var textArea2 = document.getElementById('text_area_2');
+        // var textArea2 = document.getElementById('text_area_2');
         gapi.drive.realtime.databinding.bindString(collaborativeString, textArea1);
-        gapi.drive.realtime.databinding.bindString(collaborativeString, textArea2);
+        // gapi.drive.realtime.databinding.bindString(collaborativeString, textArea2);
       }
     </script>
-
+  </div>
     <!-- チャットの基礎コード（フロント) -->
+    <div class="chat_field">
     	<div id="container">
     	<h1>チャット</h1>
       <h2>質問や疑問を投げてみてください</h2>
@@ -129,6 +131,6 @@
     	<script src="/js/jquery-2.1.4.min.js"></script>
       <!--  チャットを実装するためのjavascriptファイルを組み込む　-->
     	<script src="/js/chats/chat{{$class->classid}}.js"></script>
-
+    </div>
   </body>
 </html>
