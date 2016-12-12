@@ -135,7 +135,7 @@
     		<p class="username">
     			名前:<br> <input type="text" name="user" id="user" value="{{ Auth::user()->name }}"></p>
     		<p class="message">
-          メッセージ: <textarea type="text" name="message" id="message"></textarea>
+          メッセージ: <textarea type="text" name="message" id="message" cols="30" wrap="hard"></textarea>
     			<input type="button" id="greet" value="送信する">
     		</p>
     	</div>
