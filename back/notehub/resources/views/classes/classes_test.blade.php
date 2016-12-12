@@ -23,6 +23,17 @@
       <!-- <form>
         <input type="button" value="共同編集開始" onclick="location.reload()">
       </form> -->
+      <form method="post" action="{{ url('/rooms') }}">
+        <p>
+          <input type="text" name="className" placeholder="部屋名">
+        </p>
+        <p>
+          <input type="text" name="url" placeholder="URL">
+        </p>
+        <p>
+          <input type="submit" value="部屋一覧に追加">
+        </p>
+      </form>
       <!-- 入力エリアを作成
               text_areaの片方だけを消してもエラーがでることに注意 -->
       <textarea id="text_area_1"></textarea>
