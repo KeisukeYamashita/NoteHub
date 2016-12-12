@@ -133,7 +133,7 @@
     	</div>
     	<div id="inputField">
     		<p class="username">
-    			名前:<br> <input type="text" name="user" id="user"></p>
+    			名前:<br> <input type="text" name="user" id="user" value="{{ Auth::user()->name }}"></p>
     		<p class="message">
           メッセージ: <textarea type="text" name="message" id="message"></textarea>
     			<input type="button" id="greet" value="送信する">
