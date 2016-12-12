@@ -281,6 +281,7 @@ class ComposerStaticInit1ceff3c1a542ea76b896c81097abfe53
         'AddDayOfWeekAndPeriodIntoClassesTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_11_220134_add_day_of_week_and_period_into_classes_table.php',
         'AddRememberTokenToUsersTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_06_132609_add_remember_token_to_users_table.php',
         'CreateClassesTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_11_181922_create_classes_table.php',
+        'CreateRoomsTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_12_161331_create_rooms_table.php',
         'CreateUserTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_04_160939_create_user_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',

@@ -20,6 +20,9 @@
     <main>
       <h1>共同でノートを作っていきましょう。</h1>
       <p>{{ $class->className }}のノート作りをテスト中。<a onclick="window.open(window.location.href);return false;" target="_blank">新しいタブ</a> を作って確認して。</p>
+      <!-- <form>
+        <input type="button" value="共同編集開始" onclick="location.reload()">
+      </form> -->
       <!-- 入力エリアを作成
               text_areaの片方だけを消してもエラーがでることに注意 -->
       <textarea id="text_area_1"></textarea>
