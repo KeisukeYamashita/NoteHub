@@ -33,6 +33,7 @@ class NoteHubController extends Controller
       if ($dt->between(Carbon::createFromTime(13,0,0,$tz), Carbon::createFromTime(14,45,0,$tz))) $period = 3;
       if ($dt->between(Carbon::createFromTime(14,55,0,$tz), Carbon::createFromTime(16,40,0,$tz))) $period = 4;
       if ($dt->between(Carbon::createFromTime(16,50,0,$tz), Carbon::createFromTime(18,35,0,$tz))) $period = 5;
+      $period = 3;
       $classes = Classes::where('dayOfWeek', '=', $dt->dayOfWeek)->where('period', '=', $period)->get();
       return view('channel.channel')->with('classes', $classes);
     }

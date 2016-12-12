@@ -149,15 +149,9 @@
     	</div>
     	<div id="inputField">
     		<p class="username">
-<<<<<<< HEAD
-    			<span class="glyphicon glyphicon-user" aria-hidden="true"></span> 名前<br> <input type="text" name="user" id="user"></p>
+    			<span class="glyphicon glyphicon-user" aria-hidden="true"></span> 名前<br> <input type="text" name="user" id="user" value="{{ Auth::user()->name }}"></p>
     		<p class="message">
           <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> メッセージ<textarea type="text" name="message" id="message"></textarea>
-=======
-    			名前:<br> <input type="text" name="user" id="user" value="{{ Auth::user()->name }}"></p>
-    		<p class="message">
-          メッセージ: <textarea type="text" name="message" id="message" cols="30" wrap="hard"></textarea>
->>>>>>> fix-B3
     			<input type="button" id="greet" value="送信する">
     		</p>
     	</div>
