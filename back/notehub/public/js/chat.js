@@ -39,7 +39,6 @@ function logAll(){
 /*
  * 画面を最下部へ移動させる
  */
-
 function scTarget(){
 	var pos = $("#end").offset().top;
 	$("#talkField").animate({
@@ -47,10 +46,3 @@ function scTarget(){
 	}, 0, "slow","swing"); //swingで0が良さそう
 	return false;
 }
-// function scTarget(){
-// 	var pos = $("#end").offset().top; 
-// 	$("#talkField").animate({ 
-// 		scrollTop:pos
-// 	}, 0, "swing"); //swingで0が良さそう
-// 	return false;
-// }

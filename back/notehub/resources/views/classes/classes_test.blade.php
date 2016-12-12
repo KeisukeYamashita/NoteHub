@@ -17,7 +17,6 @@
   <body>
 
     <!-- 共同作業のコード -->
-    <div class="social_note_taking"
     <main>
       <h1>共同でノートを作っていきましょう。</h1>
       <p>{{ $class->className }}のノート作りをテスト中。<a onclick="window.open(window.location.href);return false;" target="_blank">新しいタブ</a> を作って確認して。</p>
@@ -103,9 +102,7 @@
         gapi.drive.realtime.databinding.bindString(collaborativeString, textArea);
       }
     </script>
-  </div>
     <!-- チャットの基礎コード（フロント) -->
-    <div class="chat_field">
     	<div id="container">
     	<h1>チャット</h1>
       <h2>質問や疑問を投げてみてください</h2>
@@ -121,7 +118,6 @@
           メッセージ: <textarea type="text" name="message" id="message"></textarea>
     			<input type="button" id="greet" value="送信する">
     		</p>
-    	</div>
     	</div>
       <!-- チャットで使うjquery(ajax)を組み込む -->
     	<script src="/js/jquery-2.1.4.min.js"></script>
