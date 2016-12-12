@@ -21,10 +21,8 @@
     <main>
       <h1>共同でノートを作っていきましょう。</h1>
       <p>{{ $class->className }}のノート作りをテスト中。<a onclick="window.open(window.location.href);return false;" target="_blank">新しいタブ</a> を作って確認して。</p>
-      <!-- 入力エリアを作成
-              text_areaの片方だけを消してもエラーがでることに注意 -->
-      <textarea id="text_area_1"></textarea>
-      <!-- <textarea id="text_area_2"></textarea> -->
+      <!-- 入力エリアを作成 -->
+      <textarea id="text_area"></textarea>
       <button id="auth_button">Authorize</button>
     </main>
     <script>
@@ -101,10 +99,8 @@
       // Connects the text boxes to the collaborative string
       // お互いのデータを交換する
       function wireTextBoxes(collaborativeString) {
-        var textArea1 = document.getElementById('text_area_1');
-        // var textArea2 = document.getElementById('text_area_2');
-        gapi.drive.realtime.databinding.bindString(collaborativeString, textArea1);
-        // gapi.drive.realtime.databinding.bindString(collaborativeString, textArea2);
+        var textArea = document.getElementById('text_area');
+        gapi.drive.realtime.databinding.bindString(collaborativeString, textArea);
       }
     </script>
   </div>
