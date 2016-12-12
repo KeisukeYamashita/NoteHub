@@ -23,7 +23,8 @@
       <!-- <form>
         <input type="button" value="共同編集開始" onclick="location.reload()">
       </form> -->
-      <form method="post" action="{{ url('/rooms') }}">
+      <form method="post" action="{{ url('/addroom') }}">
+        {{ csrf_field() }}
         <p>
           <input type="text" name="className" placeholder="部屋名">
         </p>

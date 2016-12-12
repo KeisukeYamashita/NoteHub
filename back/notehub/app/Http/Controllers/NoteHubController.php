@@ -47,4 +47,12 @@ class NoteHubController extends Controller
       return view('rooms')->with('rooms', $rooms);
     }
 
+    public function addRoom(Request $request) {
+      $room = new Rooms();
+      $room->className = $request->className;
+      $room->url = $request->url;
+      $room->save();
+      return redirect('/rooms');
+    }
+
 }
