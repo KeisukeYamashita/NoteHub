@@ -6,7 +6,7 @@
   <title>チャンネル</title>
 </head>
 <body>
-  <a href="/rooms">部屋一覧</a>
+  <!-- <a href="/rooms">部屋一覧</a> -->
   <div class="table-responsive">
     <table class="table  table-hover">
       <thead>
@@ -22,7 +22,7 @@
         @forelse ($classes as $class)
         <tr>
           <td>{{ $class->classid }}</td>
-          <td><a href="/{{$class->classid}}">{{ $class->className }}</a></td>
+          <td><a href="/{{$class->classUrl}}">{{ $class->className }}</a></td>
           <td>{{ $class->teacherName }}</td>
           <td>{{ $class->roomNumber }}教室</td>
           <!-- <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td> -->

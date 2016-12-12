@@ -23,7 +23,8 @@
       <!-- <form>
         <input type="button" value="共同編集開始" onclick="location.reload()">
       </form> -->
-      <form method="post" action="{{ url('/addroom') }}">
+      <!-- 部屋を作る機能は今のところ必要ない -->
+      <!-- <form method="post" action="{{ url('/addroom') }}">
         {{ csrf_field() }}
         <p>
           <input type="text" name="className" placeholder="部屋名">
@@ -34,7 +35,7 @@
         <p>
           <input type="submit" value="部屋一覧に追加">
         </p>
-      </form>
+      </form> -->
       <!-- 入力エリアを作成
               text_areaの片方だけを消してもエラーがでることに注意 -->
       <textarea id="text_area_1"></textarea>
