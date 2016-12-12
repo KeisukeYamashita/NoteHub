@@ -4,25 +4,38 @@
     <title>{{ $class->className }}</title>
     <!-- 共同作業のためのcssファイルをもらってくる  -->
     <link href="https://www.gstatic.com/realtime/quickstart-styles.css" rel="stylesheet" type="text/css"/>
-    <!-- Bootsrap3を使うためのファイルをもらっけくる -->
+    <!-- Bootsrap3を使うためのファイルをもらってくる -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <!-- チャットのcssファイルをもらってくる -->
     <link rel="stylesheet" href="/css/chat.css">
+    <!-- このページの全体のcssファイルをもらってくる -->
+    <link rel="stylesheet" href="/css/classes_test.css">
     <!--L共同作業のためのjsファイルをgoogleのサーバーからもらってくる-->
     <script src="https://apis.google.com/js/api.js"></script>
-     <!-- 共同作業用のjsファイル(ユーザー側)-->
+    <!-- 共同作業用のjsファイル(ユーザー側)-->
     <script src="https://www.gstatic.com/realtime/realtime-client-utils.js"></script>
   </head>
 
   <body>
-
+    <!-- ライブストリーミングのコード -->
     <!-- 共同作業のコード -->
-    <div class="social_note_taking"
+    <div class = "container social_note_taking">
     <main>
       <h1>共同でノートを作っていきましょう。</h1>
       <p>{{ $class->className }}のノート作りをテスト中。<a onclick="window.open(window.location.href);return false;" target="_blank">新しいタブ</a> を作って確認して。</p>
       <!-- 入力エリアを作成 -->
-      <textarea id="text_area"></textarea>
+      <div class="btn-toolbar" role="toolbar">
+      	<div class="btn-group" role="group">
+      		<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-font" aria-hidden="true"></span></button>
+      		<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-bold" aria-hidden="true"></span></button>
+      		<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-italic" aria-hidden="true"></span></button>
+      	</div>
+      	<div class="btn-group" role="group">
+      		<button type="button" class="btn btn-default">中央寄せ</button>
+      		<button type="button" class="btn btn-default">右寄せ</button>
+      	</div>
+      </div>
+      <textarea id="text_area" style="display:block; color:red"></textarea>
       <button id="auth_button">Authorize</button>
     </main>
     <script>
@@ -105,7 +118,7 @@
     </script>
   </div>
     <!-- チャットの基礎コード（フロント) -->
-    <div class="chat_field">
+    <div class = "container chat_field">
     	<div id="container">
     	<h1>チャット</h1>
       <h2>質問や疑問を投げてみてください</h2>
@@ -116,17 +129,17 @@
     	</div>
     	<div id="inputField">
     		<p class="username">
-    			名前:<br> <input type="text" name="user" id="user"></p>
+    			<span class="glyphicon glyphicon-user" aria-hidden="true"></span> 名前<br> <input type="text" name="user" id="user"></p>
     		<p class="message">
-          メッセージ: <textarea type="text" name="message" id="message"></textarea>
+          <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> メッセージ<textarea type="text" name="message" id="message"></textarea>
     			<input type="button" id="greet" value="送信する">
     		</p>
-    	</div>
     	</div>
       <!-- チャットで使うjquery(ajax)を組み込む -->
     	<script src="/js/jquery-2.1.4.min.js"></script>
       <!--  チャットを実装するためのjavascriptファイルを組み込む　-->
     	<script src="/js/chats/chat{{$class->classid}}.js"></script>
+    </div>
     </div>
   </body>
 </html>

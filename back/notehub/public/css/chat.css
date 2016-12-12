@@ -13,7 +13,7 @@ margin: 10px;
 width: 100%;
 height: 500px;
 padding: 10px;
-background-color: #7897C5;
+background-color: #ffffff;
 border: 1px solid grey;
 border-radius: 10px;
 overflow: scroll;
@@ -108,4 +108,4 @@ margin-top: -8px;
 ********************************/
 .clear_balloon{
 clear: both;
-} 
+}

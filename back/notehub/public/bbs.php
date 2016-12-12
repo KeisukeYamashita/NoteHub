@@ -9,7 +9,7 @@ if($_GET['mode'] == "0"){
 $user = htmlspecialchars($_GET['user'], ENT_QUOTES, "utf-8");
 $message = htmlspecialchars($_GET['message'], ENT_QUOTES, "utf-8");
 // class="(left or right)_balloon"でどっちに出すかを決める
-$inputValue = "<div class='user'>".$user."</div><div class='left_balloon'>".$message."</div>";
+$inputValue = "<div class='user'>".$user."</div><div class='right_balloon'>".$message."</div>";
 
 // ファイルにデータを書き込み
 if($inputValue){
