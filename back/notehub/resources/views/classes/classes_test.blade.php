@@ -40,7 +40,7 @@
       		<button type="button" class="btn btn-default">Ｈ</button>
       	</div>
       </div>
-      <textarea id="text_area" style="display:block;"></textarea>
+      <textarea id="text_area" style="display:block; color:red"></textarea>
       <button id="auth_button">Authorize</button>
     </main>
     <script>
