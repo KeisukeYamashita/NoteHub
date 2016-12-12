@@ -23,71 +23,32 @@
   <![endif]-->
 </head>
 <body>
-  <!-- <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header"> -->
-        <!-- <img class="team-logo" src="/0fromtokyo.png"> -->
-        <!-- <button type="button" class="navbar-toggle collapsed"data-toggle="collapse"data-target="#navbarEexample8">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-          <img class="notehub-logo" src="notehub.png">
-        </a>
-      </div>
-
-      <div class="collapse navbar-collapse" id="navbarEexample8">
-        <ul class="nav navbar-nav">
-          <li class="navbar-button"><a class="home" href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> ホーム</a></li>
-          <li class="navbar-button"><a href="#"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> サービス</a></li>
-          <li ><a class="navbar-login" href="/login" style="color:#ffffff"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> ログイン</a></li>
-              @if (Auth::guest())
-                  <li><a href="{{ url('/login') }}">ログインする</a></li> -->
-                  <!-- <li><a href="{{ url('/register') }}">利用登録する</a></li> -->
-              <!-- @else
-                  <li class="dropdown">
-                      <a href="{{ url('/logout')  }}" onclick="event.preventDefault();
-                               document.getElementById('logout-form').submit();">
-                          ログアウト
-                      </a>
-
-                      <ul class="dropdown-menu" role="menu">
-                          <li>
-                              <a href="{{ url('/logout') }}"
-                                  onclick="event.preventDefault();
-                                           document.getElementById('logout-form').submit();">
-                                  Logout
-                              </a>
-
-                              <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
-                                  {{ csrf_field() }}
-                              </form>
-                          </li>
-                      </ul>
-                  </li>
-              @endif
-          </ul>
-          </ul>
-
-        </div>
-      </div>
-    </nav> -->
-
     <div class="jumbotron">
-      <h1 class="jumbotron_text">どこにいても講義に参加でき<br>みんなでノートを作り上げる<br>ソーシャルクラスネットワーク</h1>
+      <h1 class="jumbotron_text1">NoteHubとは</h1>
+      <h2 class="jumbotron_text2">どこにいても講義に参加でき<br>みんなでノートを作り上げる<br>ソーシャルクラスネットワーク</h2>
     	<p><a class="btn btn-primary btn-lg " href="#service" role="button">もっと詳しく</a></p>
     </div>
 
-    <div id="service">
 
-      <blockquote class="quote">
-        人は一人では何も成し遂げられない by John Donne
+<!--
+    <div id="service2">
+      <blockquote>人は一人では何も成し遂げられない<br>by John Donne
       </blockquote>
-      <p>
-        NoteHubはこの考えに基づき、その場にいなくてもみんなで講義を受けて、みんなで一つのノートを作るシステム
-      </p>
+      <h1 class="service_text2">
+        NoteHubはその場にいなくても、みんなと講義を受け<br>みんなで1つのノートを作るシステム
+      </h1>
+    </div>
+-->
+    <div id="service">
+      <h1 class="service_text">
+        洗練された3つのサービス
+      </h1>
+      <div class="boxContainer">
+	<a href="#"><h1 class="box1 box">ノート共同作製</h1></a>
+	<a href="#"><h1 class="box2 box">チャット</h1></a>
+	<a href="#"><h1 class="box3 box">ライブ配信</h1></a>
+</div>
+
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
