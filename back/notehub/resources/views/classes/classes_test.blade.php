@@ -36,6 +36,26 @@
       	</div>
       </div>
       <textarea id="text_area" style="display:block; color:red"></textarea>
+      <!-- <form>
+        <input type="button" value="共同編集開始" onclick="location.reload()">
+      </form> -->
+      <!-- 部屋を作る機能は今のところ必要ない -->
+      <!-- <form method="post" action="{{ url('/addroom') }}">
+        {{ csrf_field() }}
+        <p>
+          <input type="text" name="className" placeholder="部屋名">
+        </p>
+        <p>
+          <input type="text" name="url" placeholder="URL">
+        </p>
+        <p>
+          <input type="submit" value="部屋一覧に追加">
+        </p>
+      </form> -->
+      <!-- 入力エリアを作成
+              text_areaの片方だけを消してもエラーがでることに注意 -->
+      <!-- <textarea id="text_area_1"></textarea>
+      <textarea id="text_area_2"></textarea> -->
       <button id="auth_button">Authorize</button>
     </main>
     <script>
@@ -129,7 +149,7 @@
     	</div>
     	<div id="inputField">
     		<p class="username">
-    			<span class="glyphicon glyphicon-user" aria-hidden="true"></span> 名前<br> <input type="text" name="user" id="user"></p>
+    			<span class="glyphicon glyphicon-user" aria-hidden="true"></span> 名前<br> <input type="text" name="user" id="user" value="{{ Auth::user()->name }}"></p>
     		<p class="message">
           <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> メッセージ<textarea type="text" name="message" id="message"></textarea>
     			<input type="button" id="greet" value="送信する">

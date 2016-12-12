@@ -6,30 +6,23 @@
   <title>チャンネル</title>
 </head>
 <body>
-  <!-- <a href="/rooms">部屋一覧</a> -->
   <div class="table-responsive">
     <table class="table  table-hover">
       <thead>
         <tr>
-          <th class="col-md-1">授業コード</th>
-          <th class="col-md-4">講義名</th>
-          <th class="col-md-2">担当教員</th>
-          <th class="col-md-2">教室</th>
+          <th class="col-md-1">部屋名</th>
           <!-- <th class="col-md-1">入退室</th> -->
         </tr>
       </thead>
       <tbody>
-        @forelse ($classes as $class)
+        @forelse ($rooms as $room)
         <tr>
-          <td>{{ $class->classid }}</td>
-          <td><a href="/{{$class->classUrl}}">{{ $class->className }}</a></td>
-          <td>{{ $class->teacherName }}</td>
-          <td>{{ $class->roomNumber }}教室</td>
+          <td><a href="{{ url($room->url) }}">{{ $room->className }}</a></td>
           <!-- <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td> -->
         </tr>
         @empty
         <tr>
-          <td>現在開講されている授業はありません。</td>
+          <td>現在部屋はありません。</td>
         </tr>
         @endforelse
       </tbody>
