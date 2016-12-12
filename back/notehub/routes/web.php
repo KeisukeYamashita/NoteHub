@@ -34,4 +34,5 @@ Auth::routes();
 // });
 
 Route::get('/home', 'NoteHubController@channel');
+Route::get('/rooms', 'NoteHubController@rooms');
 Route::get('/{classid}', 'NoteHubController@classes');

@@ -6,6 +6,7 @@
   <title>チャンネル</title>
 </head>
 <body>
+  <a href="/rooms">部屋一覧</a>
   <div class="table-responsive">
     <table class="table  table-hover">
       <thead>

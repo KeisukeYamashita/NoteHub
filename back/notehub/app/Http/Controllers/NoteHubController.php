@@ -7,6 +7,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Classes;
 use Carbon\Carbon;
+use App\Rooms;
 
 class NoteHubController extends Controller
 {
@@ -39,6 +40,11 @@ class NoteHubController extends Controller
     public function classes($classid) {
       $class = Classes::findOrFail($classid);
       return view('classes.classes_test')->with('class', $class);
+    }
+
+    public function rooms() {
+      $rooms = Rooms::all();
+      return view('rooms')->with('rooms', $rooms);
     }
 
 }
