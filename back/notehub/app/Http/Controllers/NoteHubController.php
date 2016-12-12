@@ -7,7 +7,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Classes;
 use Carbon\Carbon;
-use App\Rooms;
+// use App\Rooms;
 
 class NoteHubController extends Controller
 {
