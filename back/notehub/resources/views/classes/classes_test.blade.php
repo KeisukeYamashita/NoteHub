@@ -4,7 +4,7 @@
     <title>{{ $class->className }}</title>
     <!-- 共同作業のためのcssファイルをもらってくる  -->
     <link href="https://www.gstatic.com/realtime/quickstart-styles.css" rel="stylesheet" type="text/css"/>
-    <!-- Bootsrap3を使うためのファイルをもらっけくる -->
+    <!-- Bootsrap3を使うためのファイルをもらってくる -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <!-- チャットのcssファイルをもらってくる -->
     <link rel="stylesheet" href="/css/chat.css">
@@ -15,13 +15,32 @@
   </head>
 
   <body>
+    <!-- ライブストリーミングのコード -->
+    <div class="container livestreaming_field">
+      <h1>ライブストリーミングの枠取り（配置していない）<h1>
+    </div>
 
     <!-- 共同作業のコード -->
+    <div class = "container social_note_taking">
     <main>
       <h1>共同でノートを作っていきましょう。</h1>
       <p>{{ $class->className }}のノート作りをテスト中。<a onclick="window.open(window.location.href);return false;" target="_blank">新しいタブ</a> を作って確認して。</p>
       <!-- 入力エリアを作成 -->
-      <textarea id="text_area"></textarea>
+      <div class="btn-toolbar" role="toolbar">
+      	<div class="btn-group" role="group">
+      		<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-font" aria-hidden="true"></span></button>
+      		<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-bold" aria-hidden="true"></span></button>
+      		<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-italic" aria-hidden="true"></span></button>
+      		<button type="button" class="btn btn-default">Ｄ</button>
+      		<button type="button" class="btn btn-default">Ｅ</button>
+      	</div>
+      	<div class="btn-group" role="group">
+      		<button type="button" class="btn btn-default">Ｆ</button>
+      		<button type="button" class="btn btn-default">Ｇ</button>
+      		<button type="button" class="btn btn-default">Ｈ</button>
+      	</div>
+      </div>
+      <textarea id="text_area" style="display:block;"></textarea>
       <button id="auth_button">Authorize</button>
     </main>
     <script>
@@ -102,7 +121,9 @@
         gapi.drive.realtime.databinding.bindString(collaborativeString, textArea);
       }
     </script>
+  </div>
     <!-- チャットの基礎コード（フロント) -->
+    <div class = "container chat_field">
     	<div id="container">
     	<h1>チャット</h1>
       <h2>質問や疑問を投げてみてください</h2>
@@ -113,9 +134,9 @@
     	</div>
     	<div id="inputField">
     		<p class="username">
-    			名前:<br> <input type="text" name="user" id="user"></p>
+    			<span class="glyphicon glyphicon-user" aria-hidden="true"></span> 名前<br> <input type="text" name="user" id="user"></p>
     		<p class="message">
-          メッセージ: <textarea type="text" name="message" id="message"></textarea>
+          <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> メッセージ<textarea type="text" name="message" id="message"></textarea>
     			<input type="button" id="greet" value="送信する">
     		</p>
     	</div>
@@ -123,6 +144,7 @@
     	<script src="/js/jquery-2.1.4.min.js"></script>
       <!--  チャットを実装するためのjavascriptファイルを組み込む　-->
     	<script src="/js/chats/chat{{$class->classid}}.js"></script>
+    </div>
     </div>
   </body>
 </html>
