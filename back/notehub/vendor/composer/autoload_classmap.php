@@ -6,8 +6,10 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddDayOfWeekAndPeriodIntoClassesTable' => $baseDir . '/database/migrations/2016_12_11_220134_add_day_of_week_and_period_into_classes_table.php',
     'AddRememberTokenToUsersTable' => $baseDir . '/database/migrations/2016_12_06_132609_add_remember_token_to_users_table.php',
     'CreateClassesTable' => $baseDir . '/database/migrations/2016_12_11_181922_create_classes_table.php',
+    'CreateRoomsTable' => $baseDir . '/database/migrations/2016_12_12_161331_create_rooms_table.php',
     'CreateUserTable' => $baseDir . '/database/migrations/2016_12_04_160939_create_user_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',
