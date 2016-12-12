@@ -52,7 +52,7 @@ class NoteHubController extends Controller
       $room->className = $request->className;
       $room->url = $request->url;
       $room->save();
-      return redirect('/rooms');
+      return redirect($request->url);
     }
 
 }
