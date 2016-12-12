@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <!-- チャットのcssファイルをもらってくる -->
     <link rel="stylesheet" href="/css/chat.css">
+    <!-- このページの全体のcssファイルをもらってくる -->
+    <link rel="stylesheet" href="/css/classes_test.css">
     <!--L共同作業のためのjsファイルをgoogleのサーバーからもらってくる-->
     <script src="https://apis.google.com/js/api.js"></script>
-     <!-- 共同作業用のjsファイル(ユーザー側)-->
+    <!-- 共同作業用のjsファイル(ユーザー側)-->
     <script src="https://www.gstatic.com/realtime/realtime-client-utils.js"></script>
   </head>
 
