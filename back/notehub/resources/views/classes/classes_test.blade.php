@@ -1,9 +1,14 @@
+@extends('layouts.app')
+
+@section('content')
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>{{ $class->className }}</title>
     <!-- 共同作業のためのcssファイルをもらってくる  -->
-    <link href="https://www.gstatic.com/realtime/quickstart-styles.css" rel="stylesheet" type="text/css"/>
+    <!-- <link href="https://www.gstatic.com/realtime/quickstart-styles.css" rel="stylesheet" type="text/css"/> -->
+    <link rel="stylesheet" href="/css/note.css">
     <!-- Bootsrap3を使うためのファイルをもらってくる -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <!-- チャットのcssファイルをもらってくる -->
@@ -18,11 +23,16 @@
 
   <body>
     <!-- ライブストリーミングのコード -->
+    <!--672 * 378-->
+    <iframe class="container livestreaming_field" width="672" height="378" src="https://www.youtube.com/embed/bjIHbXZZnso" frameborder="0" allowfullscreen></iframe>
+
     <!-- 共同作業のコード -->
     <div class = "container social_note_taking">
     <main>
-      <h1>共同でノートを作っていきましょう。</h1>
-      <p>{{ $class->className }}のノート作りをテスト中。<a onclick="window.open(window.location.href);return false;" target="_blank">新しいタブ</a> を作って確認して。</p>
+      <!-- <h1>共同でノートを作っていきましょう。</h1> -->
+      <span>{{ $class->className }}のノート
+        <!-- <a onclick="window.open(window.location.href);return false;" target="_blank">新しいタブ</a> -->
+      </span>
       <!-- 入力エリアを作成 -->
       <div class="btn-toolbar" role="toolbar">
       	<div class="btn-group" role="group">
@@ -35,7 +45,7 @@
       		<button type="button" class="btn btn-default">右寄せ</button>
       	</div>
       </div>
-      <textarea id="text_area" style="display:block; color:red"></textarea>
+      <textarea id="text_area" style="display:block; color:red" cols="100" rows="33"></textarea>
       <!-- <form>
         <input type="button" value="共同編集開始" onclick="location.reload()">
       </form> -->
@@ -140,19 +150,26 @@
     <!-- チャットの基礎コード（フロント) -->
     <div class = "container chat_field">
     	<div id="container">
-    	<h1>チャット</h1>
-      <h2>質問や疑問を投げてみてください</h2>
+    	<!-- <h1>チャット</h1>
+      <h2>質問や疑問を投げてみてください</h2> -->
     	<div id="talkField">
     		<div id="result"></div>
     		<br class="clear_balloon"/>
     		<div id="end"></div>
     	</div>
     	<div id="inputField">
-    		<p class="username">
-    			<span class="glyphicon glyphicon-user" aria-hidden="true"></span> 名前<br> <input type="text" name="user" id="user" value="{{ Auth::user()->name }}"></p>
-    		<p class="message">
-          <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> メッセージ<textarea type="text" name="message" id="message"></textarea>
-    			<input type="button" id="greet" value="送信する">
+    		<p class="input-bar">
+          <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> メッセージ
+          <p id="chat-name">
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>{{Auth::user()->name }}&nbsp;&nbsp;
+            <input type="hidden" name="user" id="user" value="{{ Auth::user()->name }}">
+        <!-- </p>
+    		<p class="message"> -->
+          	<input type="button" id="greet" value="送信する">
+          </p>
+          <p>
+            <textarea type="text" name="message" id="message"></textarea>
+          </p>
     		</p>
     	</div>
       <!-- チャットで使うjquery(ajax)を組み込む -->
@@ -163,3 +180,5 @@
     </div>
   </body>
 </html>
+
+@endsection

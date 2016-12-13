@@ -1,9 +1,30 @@
+html{
+  height: 100vh;
+  width: 100vw;
+}
+ body{
+  width: 100%;
+  height: 100%;
+  background-color: #666;
+  margin: 0;
+  padding: 0;
+}
 .container.livestreaming_field{
+  width: 53%;
+  padding: 0% 1% 1% 1%;
 }
 
 .container.social_note_taking{
+  float: right;
+  width: 47%;
+  height: 100%;
+  padding: 0;
+  padding-right: 1%;
 }
 
 .container.chat_field{
-
+  float: left;
+  height: 44vh;
+  width: 53%;
+  padding: 0% 1% 0% 1%;
 }

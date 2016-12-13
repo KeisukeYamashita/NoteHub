@@ -1,0 +1,54 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+/*body {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  width: 100%;
+}*/
+
+main {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+textarea {
+  /*width: calc(50% - 8px);*/
+  width: 100%;
+  height: 100%;
+}
+
+#json_textarea {
+  width: 100%;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+main>span{
+  color: #fff;
+  background-color: #00acff;
+ position: absolute;
+  padding: 0.5% 2%;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+button {
+  display: none;
+}
+
+button.visible, p {
+  display: block;
+}
+
+  textarea {
+    width: 100%;
+    height: 100%;
+  }
+.btn-toolbar{
+  float: right;
+}

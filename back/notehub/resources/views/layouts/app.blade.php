@@ -51,17 +51,20 @@
                     <ul class="nav navbar-nav">
                         &nbsp;
                         <li class="navbar-button"><a class="home" href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> ホーム</a></li>
-                        <li class="navbar-button"><a href="#service"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> サービス</a></li>
+                        <li class="navbar-button"><a href="/#service"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> サービス</a></li>
 
                     </ul>
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a class="navbar-login" href="{{ url('/login') }}" style="color:#ffffff"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> ログイン</a></li>
-                            <li><a class="navbar-login" href="{{ url('/register') }}" style="color:#ffffff"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 新規登録</a></li>
+                            <li><a class="navbar-log" href="{{ url('/login') }}" style="color:#ffffff"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> ログイン</a></li>
+                            <li><a class="navbar-log" href="{{ url('/register') }}" style="color:#ffffff"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 新規登録</a></li>
                         @else
-                            <li class="dropdown">
+                        <li >
+                        <a class="welcome navbar-button" style="color:#00acff" href="{{url('/home')}}">ようこそ、{{Auth::user()->name}} さん
+                        </a></li>
+                            <li class="dropdown navbar-log">
                                 <a href="{{ url('/logout')  }}" onclick="event.preventDefault();
-                                         document.getElementById('logout-form').submit();">
+                                         document.getElementById('logout-form').submit();" style="color:#fff"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
                                     ログアウト
                                 </a>
 
@@ -84,12 +87,10 @@
                 </div>
             </div>
         </nav>
-
         @yield('content')
     </div>
 
     <!-- Scripts -->
-    // <script src="/js/app.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </body>
