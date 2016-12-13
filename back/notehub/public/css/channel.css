@@ -1,13 +1,23 @@
-div.table-responsive{
+/*div.table-responsive{
   margin-left:5%;
   margin-right:5%;
   background-color: #ffffff;
 }
-
 span.glyphicon-ok{
   color:green;
 }
-
 span.glyphicon-remove{
   color:red;
+}*/
+body{
+  color:#fff;
+}
+.link{
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+table.table:hover tbody tr:hover .link{
+    color: #00acff;
 }
