@@ -18,11 +18,16 @@
 
   <body>
     <!-- ライブストリーミングのコード -->
+  <div class="container livestreaming_field">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bjIHbXZZnso" frameborder="0" allowfullscreen></iframe>
+  </div>
+
     <!-- 共同作業のコード -->
     <div class = "container social_note_taking">
     <main>
-      <h1>共同でノートを作っていきましょう。</h1>
-      <p>{{ $class->className }}のノート作りをテスト中。<a onclick="window.open(window.location.href);return false;" target="_blank">新しいタブ</a> を作って確認して。</p>
+      <h1>Note</h1>
+      <p>{{ $class->className }}のノートを共同制作しましょう。</p>
+
       <!-- 入力エリアを作成 -->
       <div class="btn-toolbar" role="toolbar">
       	<div class="btn-group" role="group">
@@ -35,7 +40,9 @@
       		<button type="button" class="btn btn-default">右寄せ</button>
       	</div>
       </div>
-      <textarea id="text_area" style="display:block; color:red"></textarea>
+      <textarea id="text_area" style="display:block;"></textarea>
+
+
       <!-- <form>
         <input type="button" value="共同編集開始" onclick="location.reload()">
       </form> -->
@@ -137,23 +144,22 @@
       }
     </script>
   </div>
+
     <!-- チャットの基礎コード（フロント) -->
     <div class = "container chat_field">
     	<div id="container">
-    	<h1>チャット</h1>
-      <h2>質問や疑問を投げてみてください</h2>
-    	<div id="talkField">
-    		<div id="result"></div>
-    		<br class="clear_balloon"/>
-    		<div id="end"></div>
-    	</div>
-    	<div id="inputField">
+      <div id="inputField">
     		<p class="username">
-    			<span class="glyphicon glyphicon-user" aria-hidden="true"></span> 名前<br> <input type="text" name="user" id="user" value="{{ Auth::user()->name }}"></p>
+    			<span class="glyphicon glyphicon-user" aria-hidden="true"></span> 名前<br> <div class="user">{{ Auth::user()->name }}</div>
     		<p class="message">
           <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> メッセージ<textarea type="text" name="message" id="message"></textarea>
     			<input type="button" id="greet" value="送信する">
     		</p>
+    	</div>
+    	<div id="talkField">
+    		<div id="result"></div>
+    		<br class="clear_balloon"/>
+    		<div id="end"></div>
     	</div>
       <!-- チャットで使うjquery(ajax)を組み込む -->
     	<script src="/js/jquery-2.1.4.min.js"></script>

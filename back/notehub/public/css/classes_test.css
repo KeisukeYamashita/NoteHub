@@ -1,9 +1,15 @@
-.container.livestreaming_field{
+/*.container.livestreaming_field{
+  width: 60%;
 }
 
 .container.social_note_taking{
+  background-color: white;
 }
 
 .container.chat_field{
-
-}
+  margin-left: 20px;
+  left:0px;
+  position: relative;
+  width: 70%;
+  background-color: white;
+}*/

@@ -1,27 +1,47 @@
 @charset "utf-8";
 body{
+  background-color: #f7f7f7;
 }
+
 #container{
 margin: 0 auto;
-width: 800px;
+width: 560px;
+background-color: white;
 }
+
 #inputField{
-width: 100%;
+width: 560px;
 margin: 10px;
 }
+
 #talkField{
-width: 100%;
+width: 560px;;
 height: 500px;
 padding: 10px;
 background-color: #ffffff;
-border: 1px solid grey;
-border-radius: 10px;
+/*border: 1px solid grey;*/
+/*border-radius: 10px;*/
 overflow: scroll;
 word-break: break-all;
 }
-#message{
-width: 100%;
+
+.username{
+  margin: 0px;
 }
+#message{
+width: 97%;
+background-color: #f7f7f7;
+}
+#user{
+  background-color: #f7f7f7;
+}
+
+#inputField .user{
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 16px;
+}
+
 .user{
 clear: both;
 }
