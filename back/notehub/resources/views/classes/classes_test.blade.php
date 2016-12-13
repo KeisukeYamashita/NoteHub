@@ -40,7 +40,7 @@
       		<button type="button" class="btn btn-default">右寄せ</button>
       	</div>
       </div>
-      <textarea id="text_area" style="display:block;"></textarea>
+      <textarea id="text_area" style="display:block; width:500px;height:530px;"></textarea>
 
 
       <!-- <form>
@@ -151,6 +151,7 @@
       <div id="inputField">
     		<p class="username">
     			<span class="glyphicon glyphicon-user" aria-hidden="true"></span> 名前<br> <div class="user">{{ Auth::user()->name }}</div>
+        </p>
     		<p class="message">
           <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> メッセージ<textarea type="text" name="message" id="message"></textarea>
     			<input type="button" id="greet" value="送信する">
