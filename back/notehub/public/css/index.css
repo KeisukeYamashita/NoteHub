@@ -4,11 +4,8 @@ body {
   font-family: Open Sans;
   font-size: 16px;
   line-height: 1.42857;
-  background: #333333;
-  height: 350px;
-  padding: 0;
-  margin: 0;
-  color:#00acff;
+  background: #666;
+  color:#fff;
   /*position: relative;
   width: 100%;
   height: 100%;*/
@@ -21,22 +18,22 @@ body {
 }
 .notehub-logo{
   position: absolute;
-  top:-30px;
+  top:-47%;
   bottom: 0;
-  left: 5%;
+  left: 3%;
   right: 0;
   max-height: 90px;
   width: auto;
 }
-.navbar-nav{
-  /*float: right;*/
-  margin: 0px, 100px;
+/*.navbar-nav{
+  float: right;
+  margin: 0%, 50%;
   text-decoration: none;
   margin-bottom:0;
-}
+}*/
 .navbar-button{
   float: left;
-  margin-top: 5px;
+  margin-top: 2%;
   margin-right: 20px;
   text-decoration: none;
 }
@@ -81,7 +78,7 @@ body {
   padding: 5px;
   width:405px;
   background-color: #fff;
-  color: #00acff;
+  color: #00acff !important;
   opacity: 0.8;
   border-radius: 10px;
   -moz-border-radius: 10px;
@@ -106,8 +103,8 @@ body {
   margin-left: 50px;
 }
 
-/* サービス */
-#service2{
+/* サービス（仮）*/
+/*#service2{
   margin-top: 100px;
   height: 720px;
   background-image: url("/service.png");
@@ -121,7 +118,7 @@ body {
   text-align: center;;
   background-color: #fff;
   color: #333 !important;
-  /*opacity: 0.8;*/
+  opacity: 0.8;
   width: 330px;
 }
 .service_text2{
@@ -134,13 +131,13 @@ body {
   height: 150px;
   background-color: #00acff;
   color: #fff !important;
-  /*opacity: 0.8;*/
+  opacity: 0.8;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
-}
+}*/
 
-/* サービス（仮） */
+/* サービス */
 #service{
   margin-top: 100px;
   height: 800px;

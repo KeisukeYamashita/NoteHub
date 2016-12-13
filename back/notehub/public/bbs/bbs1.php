@@ -2,7 +2,7 @@
 $testFile = "test1.log";
 if($_GET['mode'] == "0"){
 $user = htmlspecialchars($_GET['user'], ENT_QUOTES, "utf-8");
-$message = htmlspecialchars($_GET['message'], ENT_QUOTES, "utf-8");
+$message = nl2br(htmlspecialchars($_GET['message'], ENT_QUOTES, "utf-8"));
 $inputValue = "<div class='user'>".$user."</div><div class='left_balloon'>".$message."</div>";
 
 // ファイルにデータを書き込み

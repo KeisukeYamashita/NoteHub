@@ -14,5 +14,7 @@ class Classes extends Model
       'className',
       'teacherName',
       'roomNumber',
+      'dayOfWeek',
+      'period',
     ];
 }
