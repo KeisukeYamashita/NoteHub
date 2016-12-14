@@ -35,7 +35,7 @@ body {
 }*/
 .navbar-button{
   float: left;
-  margin-top: 2%;
+  margin-top: 1.9%;
   margin-right: 2vw;
   text-decoration: none;
 }
@@ -58,7 +58,7 @@ body {
 }
 .welcome{
   color: #00acff;
-  margin-top: 5px;
+  margin-top: 1.9%;
 }
 
 /* indexの中身 */
@@ -68,13 +68,14 @@ body {
   /*height: 586px;*/
   height: 100vh;
   background-color: #000;
-  /*background-image: url("/service2.JPG");*/
-  background-image: url("/background.jpg");
+  /*background-image: url("/service.gif");*/
+  background-image: url("/background.gif");
 
   background-position: center; background-repeat:no-repeat;
   background-size: contain;
 }
 .jumbotron_text1{
+  position: relative;
   margin-left: 2.5%;
   margin-top: 15%;
   padding: 0.2%;
@@ -144,7 +145,7 @@ body {
   margin-top: 25vh;
   height: 100vh;
   background-color: #000;
-  background-image: url("/service2.JPG");
+  background-image: url("/service.gif");
   background-position: center;
   background-repeat:no-repeat;
   background-size: contain;
@@ -195,7 +196,7 @@ body {
   margin-top: 25vh;
   height: 100vh;
   background-color: #000;
-  background-image: url("/service2.JPG");
+  background-image: url("/service.gif");
   background-position: center;
   background-repeat:no-repeat;
   background-size: contain;
@@ -228,6 +229,21 @@ body {
   -webkit-border-radius: 10px;
   position: absolute;
   margin: 35vh 20% 0%;
+}
+#three-service .detail_service_box{
+  padding: 10% 5%;
+    width: 60%;
+    height: 40%;
+	display: inline;
+    opacity: 0.9;
+  background-color: #00acff;
+  color: #fff !important;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  position: absolute;
+  margin: 35vh 20% 0%;
+  text-align: center;
 }
 
 .next{

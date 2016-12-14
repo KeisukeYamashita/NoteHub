@@ -40,9 +40,9 @@
     </div>
 -->
 <div id="service">
-  <h1 class="service_text">
+  <a href="/#note-service"><h1 class="service_text">
     洗練された3つのサービス
-  </h1>
+  </h1></a>
   <div class="boxContainer">
     <a href="#note-service"><h1 class="box1 box">ノート共同作製</h1></a>
     <a href="#chat-service"><h1 class="box2 box">チャット</h1></a>
@@ -73,7 +73,12 @@
       <h1 class="detail_service_text">
         ライブ配信
       </h1>
-      <h2 class="detail_service_box">どこからでも講義の聴講が可能になり都合により大学へ足を運べない場合でも自身のデバイスから受講ができる</h2>
+      <h2 class="detail_service_box">どこからでも講義の聴講が可能になり、大学へ足を運べない場合でも自身のデバイスから受講ができる</h2>
+      <a class="next" href="/#three-service">次へ<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+    </div>
+
+    <div id="three-service" class="detail_service">
+      <h1 class="detail_service_box" style="font-size:3em">この3つのサービスが一画面に。</h1>
       <a class="next-login" href="/login">さっそく使ってみよう<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
