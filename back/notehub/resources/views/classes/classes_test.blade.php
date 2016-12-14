@@ -41,11 +41,12 @@
       		<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-italic" aria-hidden="true"></span></button>
       	</div>
       	<div class="btn-group" role="group">
+          <button type="button" class="btn btn-default">左寄せ</button>
       		<button type="button" class="btn btn-default">中央寄せ</button>
       		<button type="button" class="btn btn-default">右寄せ</button>
       	</div>
       </div>
-      <textarea id="text_area" style="display:block; color:red" cols="100" rows="33"></textarea>
+      <textarea id="text_area" style="display:block; color:#666" cols="100" rows="33"></textarea>
       <!-- <form>
         <input type="button" value="共同編集開始" onclick="location.reload()">
       </form> -->

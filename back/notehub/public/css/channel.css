@@ -1,13 +1,34 @@
-div.table-responsive{
+/*div.table-responsive{
   margin-left:5%;
   margin-right:5%;
   background-color: #ffffff;
 }
-
 span.glyphicon-ok{
   color:green;
 }
-
 span.glyphicon-remove{
   color:red;
+}*/
+body{
+  color:#00acff;
+}
+.table-responsive{
+  width:96%;
+  margin: 2%;
+  padding: 1%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+tbody tr{
+}
+.link{
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #00acff;
+}
+table.table:hover tbody tr:hover .link{
+    color: #00acff;
 }

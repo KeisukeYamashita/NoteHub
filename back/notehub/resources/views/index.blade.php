@@ -39,18 +39,48 @@
       </h1>
     </div>
 -->
-    <div id="service">
-      <h1 class="service_text">
-        洗練された3つのサービス
-      </h1>
-      <div class="boxContainer">
-	<a href="#"><h1 class="box1 box">ノート共同作製</h1></a>
-	<a href="#"><h1 class="box2 box">チャット</h1></a>
-	<a href="#"><h1 class="box3 box">ライブ配信</h1></a>
+<div id="service">
+  <a href="/#note-service"><h1 class="service_text">
+    洗練された3つのサービス
+  </h1></a>
+  <div class="boxContainer">
+    <a href="#note-service"><h1 class="box1 box">ノート共同作製</h1></a>
+    <a href="#chat-service"><h1 class="box2 box">チャット</h1></a>
+    <a href="#live-service"><h1 class="box3 box">ライブ配信</h1></a>
+  </div>
+
+
 </div>
 
+    <div id="note-service" class="detail_service">
+      <h1 class="detail_service_text">
+        ノート共同作製
+      </h1>
+      <h2 class="detail_service_box">受講者みんなでノートの共同作製が可能になり、みんなとノートを共有することで理解の手助けとなる</h2>
+        <a class="next" href="/#chat-service">次へ<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+    </a>
     </div>
 
+    <div id="chat-service" class="detail_service">
+      <h1 class="detail_service_text">
+        チャット
+      </h1>
+      <h2 class="detail_service_box">受講者同士の質疑応答やコミュニケーションが可能になり、能動的で活発な講義の手助けとなる</h2>
+      <a class="next" href="/#live-service">次へ<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+    </div>
+
+    <div id="live-service" class="detail_service">
+      <h1 class="detail_service_text">
+        ライブ配信
+      </h1>
+      <h2 class="detail_service_box">どこからでも講義の聴講が可能になり、大学へ足を運べない場合でも自身のデバイスから受講ができる</h2>
+      <a class="next" href="/#three-service">次へ<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+    </div>
+
+    <div id="three-service" class="detail_service">
+      <h1 class="detail_service_box" style="font-size:3em">この3つのサービスが一画面に。</h1>
+      <a class="next-login" href="/login">さっそく使ってみよう<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -3,8 +3,10 @@
 @section('content')
 <!DOCTYPE html>
 <head>
+  <link href="/css/channel.css" rel="stylesheet">
   <title>チャンネル</title>
 </head>
+
 <body>
   <div class="table-responsive">
     <table class="table  table-hover">
@@ -20,10 +22,10 @@
       <tbody>
         @forelse ($classes as $class)
         <tr>
-          <td>{{ $class->classid }}</td>
-          <td><a href="/{{$class->classUrl}}">{{ $class->className }}</a></td>
-          <td>{{ $class->teacherName }}</td>
-          <td>{{ $class->roomNumber }}教室</td>
+          <td><a class="link" href="/{{$class->classUrl}}">{{ $class->classid }}</a></td>
+          <td><a class="link" href="/{{$class->classUrl}}">{{ $class->className }}</a></td>
+          <td><a class="link" href="/{{$class->classUrl}}">{{ $class->teacherName }}</a></td>
+          <td><a class="link" href="/{{$class->classUrl}}">{{ $class->roomNumber }}教室</a></td>
           <!-- <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td> -->
         </tr>
         @empty
