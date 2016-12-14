@@ -13,9 +13,11 @@ body{
   color:#00acff;
 }
 .table-responsive{
+  width:96%;
   margin: 2%;
   padding: 1%;
   background-color: #fff;
+  border-radius: 5px;
 }
 tbody tr{
 }
