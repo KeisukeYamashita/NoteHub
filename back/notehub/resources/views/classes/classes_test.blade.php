@@ -43,26 +43,6 @@
       <textarea id="text_area" style="display:block; width:500px;height:530px;"></textarea>
 
 
-      <!-- <form>
-        <input type="button" value="共同編集開始" onclick="location.reload()">
-      </form> -->
-      <!-- 部屋を作る機能は今のところ必要ない -->
-      <!-- <form method="post" action="{{ url('/addroom') }}">
-        {{ csrf_field() }}
-        <p>
-          <input type="text" name="className" placeholder="部屋名">
-        </p>
-        <p>
-          <input type="text" name="url" placeholder="URL">
-        </p>
-        <p>
-          <input type="submit" value="部屋一覧に追加">
-        </p>
-      </form> -->
-      <!-- 入力エリアを作成
-              text_areaの片方だけを消してもエラーがでることに注意 -->
-      <!-- <textarea id="text_area_1"></textarea>
-      <textarea id="text_area_2"></textarea> -->
       <button id="auth_button">Authorize</button>
     </main>
     <script>
