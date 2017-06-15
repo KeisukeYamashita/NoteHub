@@ -1,24 +1,34 @@
-README.mdの雛形（ここにファイル名を記載）
-=====
+# NoteHub
 
-Created and designed by Yamashita Keisuke(2016/12/3)
+Facilitation System for lectures at University
 
-Overview
-##Description
-ここに一言で何をするものか書く。
-##VS.
-丁寧な説明を記載。
-##Requirement
-ライブラリやツールがあれば書く、なければnoneと記載。
-Carbon
-##Usage
-使い方、オプション、EXAMPLEで実行例を記載。
-ちゃんと書くこと
-##Install
-インストール方法、ターミナルコマンドを書く。
+![](screenshot.png)
 
-```$ sudo cp [コピーする対象ファイルまでのパス] [コピー先までのパス]```
-##Contribution
-どうやって参加するかを書く、cloneなどの手続きなど。
-##Licence
-[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
+## Description
+
+This application facilitates conversation and cooperation between attendees for lectures at university. Watching lecture video on Live Streaming Screen, Have a conversation with your classmates, Co-Edit notes with your classmates.
+
+## Features
+
+- Live Streaming for lectures at university
+- Chat system
+- Note Co-Editing
+
+## Requirement
+
+- PHP 5.6.30
+- Laravel 5.3.26
+
+## Installation and How tu run a local server
+
+    git clone https://github.com/MasayaHayashi724/notehub.git
+    cd notehub
+    php artisan serve
+
+Then, visit http://localhost:8000
+
+## Author
+
+- [MasayaHayashi724](https://github.com/MasayaHayashi724)
+- [KeisukeYamashita](https://github.com/KeisukeYamashita)
+- [KatsuyaMatsuoka](https://github.com/KatsuyaMatsuoka)
